@@ -84,7 +84,7 @@ def create_tables_and_load_data(): # Function to create tables and load data
             print(f"WARNING: Could not find {file}")
 
     # Execution of loading
-    # Make sure your CSV filenames match exactly what is in your folder
+    
     insert_csv('pizza_types.csv', "INSERT INTO pizza_types VALUES (%s, %s, %s, %s)", 4)
     insert_csv('pizzas.csv', "INSERT INTO pizzas VALUES (%s, %s, %s, %s)", 4)
     insert_csv('orders.csv', "INSERT INTO orders VALUES (%s, %s, %s)", 3, date_col='date')
